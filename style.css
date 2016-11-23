@@ -153,7 +153,7 @@ filter: progid:DXImageTransform.Micro
 
 /* zaznaczony */
 a:active {
-    
+
 }
 
 input{
@@ -168,22 +168,22 @@ input:disabled {
 }
 
 input:enabled{
- 
+
 }
 
 input:required {
-  
+
 }
 
 
 input:not(required) {
-  
+
 }
 
 input:focus
 {
     /* 3. hsla model*/
- 
+
 }
 input[type=submit]
 {

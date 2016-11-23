@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <title>Bez nazwy</title>
-    <meta charset="UTF-8">
-    <meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
-    <meta name="Keywords" content="labolatorium,webowe,lista3,template">
-    <meta name="Author" content="Przemysław Pyzałka">
-    <meta name="Generator" content="JTHTML 7.6.2">
-    <link rel="Stylesheet" href="style.css" type="text/css">
-      <script>
+	<head>
+		<title>Bez nazwy</title>
+		<meta charset="UTF-8">
+			<meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
+				<meta name="Keywords" content="labolatorium,webowe,lista3,template">
+					<meta name="Author" content="Przemysław Pyzałka">
+						<meta name="Generator" content="JTHTML 7.6.2">
+							<link rel="Stylesheet" href="style.css" type="text/css">
+								<script>
           var scripts=["date.js"];
 
           function addScripts(scripts)
@@ -21,16 +21,16 @@
               });
           }
           document.addEventListener("DOMContentLoaded",addScripts(scripts));
-      </script>
-  </head>
-  <body>
-    <div id="baner" class="bordered"></div>
-         <div id="tlo">
-               <div id="container" class="bordered">
-                    <div id="pasekgorny">toppasek</div>
-                    <?php include("menu.php"); ?>
-                    <div id="placeholder">
-                    <h1>Lorem ipsum</h1>
+								</script>
+							</head>
+							<body>
+								<div id="baner" class="bordered"/>
+								<div id="tlo">
+									<div id="container" class="bordered">
+										<div id="pasekgorny">toppasek</div>
+										<?php include("menu.php"); ?>
+										<div id="placeholder">
+											<h1>Lorem ipsum</h1>
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel interdum augue. Donec eu ligula ut justo dapibus aliquam. Donec est ex, rhoncus sit amet malesuada in, congue sed elit. Aliquam egestas tincidunt elit, ac semper orci hendrerit ut. Aliquam a erat eu neque ullamcorper pretium vel sit amet mi. Morbi ut volutpat dui. Suspendisse pharetra justo ac diam euismod, eget sodales quam elementum. Nullam efficitur vel lectus eget ultricies. Fusce cursus leo eros, id ornare ante convallis accumsan. Mauris venenatis nisl a diam tincidunt lacinia. Suspendisse potenti. Quisque in mi in purus varius interdum faucibus non dui. Nunc vel tincidunt turpis, et interdum arcu.
 
 Praesent lacinia, magna vel ullamcorper porta, massa arcu imperdiet elit, non viverra mauris justo sed nisl. Vivamus nec dapibus leo, in tincidunt lacus. Vivamus dolor mauris, condimentum eu odio vitae, sodales placerat elit. Sed porta ligula sit amet dignissim accumsan. Sed ut semper orci, ac facilisis mauris. Mauris porttitor elit sed ex facilisis efficitur. Quisque congue sed elit quis aliquam. Aliquam erat volutpat. Vestibulum pharetra faucibus lectus, at viverra leo sodales vel. Nulla molestie erat ut nisl luctus, sed consequat risus sollicitudin. In hac habitasse platea dictumst.
@@ -66,12 +66,15 @@ Donec vel auctor ipsum, vel semper est. Integer condimentum pellentesque mi, id 
 Duis ut sapien eu justo tempor luctus vitae eu erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor sapien ac tortor tincidunt dapibus. Proin elit enim, imperdiet at turpis a, porta ullamcorper odio. Donec id gravida nunc. Ut orci felis, commodo condimentum urna nec, sodales molestie felis. Aliquam finibus, arcu sed venenatis facilisis, lacus felis viverra ligula, placerat ultrices arcu lacus vitae massa. Quisque convallis ut est et interdum.
 
 Vestibulum eget tortor venenatis, vulputate sem quis, tempor est. Proin eget nisi egestas lorem hendrerit pretium. Pellentesque scelerisque dui vitae tortor tempus.
-                    </div>
-                    <div id="stopka"><footer>Autorstwo: Anna Dekiert Przemysław Pyzałka
+										</div>
+										<div id="stopka">
+											<footer>Autorstwo: Anna Dekiert Przemysław Pyzałka
                                              źródła: wikipedia.org autocentrum.pl                                                     
-                    </footer></div>
-               </div>
- 
-         </div>
-  </body>
-</html>
+											</footer>
+										</div>
+									</div>
+
+								</div>
+							</body>
+						</html>
+						
