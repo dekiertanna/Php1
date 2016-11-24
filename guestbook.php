@@ -26,26 +26,7 @@
 
 							</head>
 							<body>
-								<script>
-								function checkPass(){
-									var pass1 = document.forms["register"]["haslo"].value;
-									var pass2 = document.forms["register"]["haslo_confirm"].value;
-									var p1 = document.getElementById("pass1")
-									var p2 = document.getElementById("pass2")
-										if(pass1 == pass2)
-										{
-											p1.style.backgroundColor = "green";
-											p2.style.backgroundColor = "green";
-
-
-										}
-										else{
-											p1.style.backgroundColor = "red";
-											p2.style.backgroundColor = "red";
-										}
-
-								}
-								</script>
+								
 								<div id="baner" class="bordered"/>
 								<div id="tlo">
 									<div id="container" class="bordered">
