@@ -59,7 +59,7 @@
 
 
 											<h1>Formularz rejestracji</h1>
-											<form name="register" action="thanks.html" autocomplete="on">
+											<form name="register" action="thanks.php" autocomplete="on">
 												<!-- link do php obslugujacego form -->
 												<label>
 													<input type="text" name="imie" required autofocus>Imię</label>

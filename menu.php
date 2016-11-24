@@ -61,7 +61,8 @@
 					<li>Formularze osobowe
 						<ul >
 							<li>
-								<a href="form.php" title="Formularz osobowy">Formularz rejestracji</a>
+								<a href="form.php" title="Formularz rejestracji">Formularz rejestracji</a>
+								<a href="guestbook.php" title="Wpis go księgi gości">Wpis do księgi gości</a>
 							</li>
 						</ul>
 					</li>
