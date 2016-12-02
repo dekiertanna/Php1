@@ -4,8 +4,8 @@
   <head>
     <title>Formularz osobowy</title>
     <meta charset="UTF-8">
-    <meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
-    <meta name="Keywords" content="labolatorium,webowe,lista3,template">
+    <meta name="Description" content="Prezentacja rozwiazan listy szostej">
+    <meta name="Keywords" content="labolatorium,webowe,lista6,template">
     <meta name="Author" content="Przemysław Pyzałka">
     <meta name="Generator" content="JTHTML 7.6.2">
     <link rel="Stylesheet" href="style.css" type="text/css">
@@ -32,18 +32,3 @@
                     <div id="pasekgorny"></div>
                    <?php include("menu.php"); ?>
                     <div id="tresc">
-                   
-                    
-                    </div>
-                    
-                    <div id="stopka"><footer>Autorstwo: Anna Dekiert Przemysław Pyzałka
-                                                                                             
-                    </footer></div>
-               </div>
- 
-         </div>
-         
-         
-          
-  </body>
-</html>

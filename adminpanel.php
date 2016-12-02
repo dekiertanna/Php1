@@ -1,9 +1,11 @@
-
+<?php
+include ("showUsers.php");
+ ?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
     <title>Formularz osobowy</title>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
     <meta name="Keywords" content="labolatorium,webowe,lista3,template">
     <meta name="Author" content="Przemysław Pyzałka">
@@ -32,7 +34,7 @@
                     <div id="pasekgorny"></div>
                    <?php include("menu.php"); ?>
                     <div id="tresc">
-                   
+                    <?php showUsers(); ?>
                     
                     </div>
                     

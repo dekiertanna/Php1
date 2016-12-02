@@ -46,13 +46,8 @@ function otworzOkno() {
 
 function wypelnijOkno(imagesource) {
 
-    return '<head>
-							<script type="text/javascript">function dopasuj() { window.resizeTo(' + screen.availWidth + ', ' + screen.availHeight + '); }</script>
-						</head>' +
-        '<body  onload=dopasuj();>
-							<img src=' + imagesource + '>
-								<img/>
-							</body>'
+    return '<head> <script type="text/javascript">function dopasuj() { window.resizeTo(' + screen.availWidth + ', ' + screen.availHeight + '); }</script></head>' +
+        '<body  onload=dopasuj();><img src=' + imagesource + '><img/></body>'
 
 }
 

@@ -22,7 +22,7 @@ var value=document.getElementById("kolortekstu").value;
 function registerListeners()
 
 {
-
+   
     document.getElementById("submittekst").addEventListener('click',changeFontColor);
     document.getElementById("czcionka").addEventListener('click',changeFont);
     divtresc=document.getElementById("divtresc");

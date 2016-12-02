@@ -9,6 +9,11 @@ padding:0;
 * { font-family: Arial !important;}
 
 
+.selectlist
+{
+width:150px;
+height:100px;
+}
 
 
 .bordered
@@ -153,7 +158,7 @@ filter: progid:DXImageTransform.Micro
 
 /* zaznaczony */
 a:active {
-
+    
 }
 
 input{
@@ -168,29 +173,24 @@ input:disabled {
 }
 
 input:enabled{
-
+ 
 }
 
 input:required {
-
+  
 }
 
 
 input:not(required) {
-
+  
 }
 
 input:focus
 {
     /* 3. hsla model*/
-
+ 
 }
 input[type=submit]
-{
-	margin-left:1%;
-	margin-bottom:1%;
-}
-textarea
 {
 	margin-left:1%;
 	margin-bottom:1%;

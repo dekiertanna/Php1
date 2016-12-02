@@ -7,8 +7,7 @@ function processLinks()
    for ( var i = 0; i < linksList.length; ++i )
    {
       var currentLink = document.images[i].src;
-      contents += "<li>
-				<a href='" + currentLink + "'>" + 
+      contents += "<li><a href='" + currentLink + "'>" + 
          currentLink + "</li>";
    } // end for
 

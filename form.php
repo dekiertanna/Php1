@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
@@ -55,44 +55,90 @@
 										</div>
 										<?php include("menu.php"); ?>
 										<div id="tresc">
-
-
+                    
+                         
 
 											<h1>Formularz rejestracji</h1>
-											<form name="register" action="thanks.php" autocomplete="on">
-												<!-- link do php obslugujacego form -->
+											<form name="register" action="registercheck.php" method="post" autocomplete="on">
+											
 												<label>
-													<input type="text" name="imie" required autofocus>Imię</label>
+													<input type="text" name="imie"  autofocus
+                           value="<?php echo $wynik = isset($_SESSION['imie']) ? $_SESSION['imie'] : ''; ?>">Imię </label>
 													<br>
+                          
 														<label>
-															<input type="text" name="nazwisko" required>Nazwisko</label>
+															<input type="text" name="nazwisko"
+                              value="<?php echo $wynik = isset($_SESSION['nazwisko']) ? $_SESSION['nazwisko'] : ''; ?>" >Nazwisko</label>
 															<br>
 																<label>
-																	<input type="text" name="login" required>Login</label>
+																	<input type="text" name="userlogin"
+                                  value="<?php echo $wynik = isset($_SESSION['userlogin']) ? $_SESSION['userlogin'] : ''; ?>" >Login - dlugosc 3-15 zawiera litery i liczby bez znaków specjalnych</label>
 																	<br>
 																		<label id="haslo">
-																			<input type="password" id="pass1" name="haslo" required onblur="checkPass();">Hasło</label>
+																			<input type="password" id="pass1" name="haslo" onblur="checkPass();">Hasło - długość 5-12 znaków składa się z liter i liczb</label>
 																			<br>
 																				<label>
-																					<input type="password" id="pass2" name="haslo_confirm" required onblur="checkPass()">Potwierdź hasło</label>
+																					<input type="password" id="pass2" name="haslo_confirm" onblur="checkPass()">Potwierdź hasło</label>
 																					<br>
 																						<label>
-																							<input type="date" name="date" >Data urodzenia </label>
+																							<input type="date" name="date"
+                                              value="<?php echo $wynik = isset($_SESSION['date']) ? $_SESSION['date'] : ''; ?>"
+                                               >Data urodzenia w formacie yyyy-mm-dd</label>
 																							<br>    
 
 																								<label>
-																									<input type="email" name="email " required>Twój email</label>
+																									<input type="email" name="e-mail"
+                                                  value="<?php echo $wynik = isset($_SESSION['e-mail']) ? $_SESSION['e-mail'] : ''; ?>"
+                                                   >Twój e-mail</label>
 																									<br>
 																										<label>
-																											<input type="tel" name="telefon" pattern="[0-9]{9}">Twój telefon </label>
-																											<br>
-
-
+																											<input type="tel" name="telefon"
+                                                      value="<?php echo $wynik = isset($_SESSION['telefon']) ? $_SESSION['telefon'] : ''; ?>"
+                                                       >Twój telefon </label>
+																											<br>	
+                                                      <br>
+                                                      
+                                                   
+                                                    
+                                                   <label>Twoje wykształcenie:<br /></label>
+                                                   <input type="radio" name="wyksztalcenie" value="podstawowe">Podstawowe<br />
+                                                   <input type="radio" name="wyksztalcenie" value="gimnazjalne">Gimnazjalne<br />
+                                                   <input type="radio" name="wyksztalcenie" value="zawodowe">Zawodowe<br />
+                                                   <input type="radio" name="wyksztalcenie" value="średnie">Średnie<br />
+                                                   <input type="radio" name="wyksztalcenie" value="wyższe">Wyższe <br />
+                                                      
+                                                  <br />    
+                                                  <label>  Wybierz kilka ulubionych modeli samochodów:<br /></label>
+                                                  <select id="modellist" class="selectlist" multiple="multiple" name="modele[]">
+                                                  
+                                                   <optgroup label="Fiat">
+                                                   	<option>Punto</option>
+                                                    <option>Panda</option>
+                                                    </optgroup>
+                                                    <optgroup label="Renault">
+                                                   	<option>Megane</option>
+                                                    <option>Clio</option>
+                                                    </optgroup> 
+                                                    <optgroup label="Audi">
+                                                   	<option>A4</option>
+                                                    <option>A8</option>
+                                                    </optgroup> 
+                                                    <optgroup label="Honda">
+                                                   	<option>Civic</option>
+                                                    <option>Jazz</option>
+                                                    </optgroup>  
+                                                  </select>
+                                                
+                                                  <br />
+                                                  
 																												<label>
 																													<input name="checkbox" type="checkbox" class="checkboxes"  title="Checkbox" required>Oświadczam, że ukończyłem/am 13 lat.</label>
 																													<br>
-
-																														<input type="submit">
+                                                        <label>
+                                                     
+                                                        <input type="submit" name="submit" value="Rejestruj">
+                                                        
+                                                            </label>
 																														</form>
 
 
