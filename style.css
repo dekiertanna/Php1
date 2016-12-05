@@ -396,3 +396,23 @@ text-shadow: 2px 2px 8px #FF0000;
 text-align: justify;
 margin-left: 10%;
 margin-right: 10%}
+
+#login-parent{
+	display: flex;
+	background: #4d4d4d;
+	color:white;
+}
+
+
+#password{
+	vertical-align: top;
+}
+
+#rememberme{
+	vertical-align:top;
+}
+
+#registerlink{
+	vertical-align:top;
+	flex: 1;
+}

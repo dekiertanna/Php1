@@ -3,7 +3,7 @@ require("connection.php");
 
 function showUsers()
 {
-$connection=connect('localhost','root','','page');
+$connection=$conn;
 
 
 $sql='SELECT * FROM users';

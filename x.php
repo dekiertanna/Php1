@@ -27,7 +27,9 @@
     <div id="baner" class="bordered"></div>
          <div id="tlo">
                <div id="container" class="bordered">
+			   <?php include("loginbar.php");?>
                     <div id="pasekgorny">toppasek</div>
+					
                    <?php include("menu.php"); ?>
                     <div id="tresc">
                          <h1> Strona główna </h1>
