@@ -3,11 +3,7 @@
 	session_start();
 	require_once 'connect.php';
 	
-	// it will never let you open index(login) page if session is set
-	if ( isset($_SESSION['user'])!="" ) {
-		header("Location: x.php");
-		exit;
-	}
+	
 	
 	$error = false;
 	
@@ -25,15 +21,15 @@
 		
 		if(empty($email)){
 			$error = true;
-			$emailError = "Please enter your email address.";
+			$emailError = "Wprowadź adres email.";
 		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			$error = true;
-			$emailError = "Please enter valid email address.";
+			$emailError = "Wprowadź poprawny adres email";
 		}
 		
 		if(empty($pass)){
 			$error = true;
-			$passError = "Please enter your password.";
+			$passError = "Wprowadź hasło";
 		}
 		
 		// if there's no error, continue to login
@@ -47,9 +43,9 @@
 			
 			if( $count == 1 && $row['userPass']==$password ) {
 				$_SESSION['user'] = $row['userId'];
-				header("Location: home.php");
+				header("Location: x.php");
 			} else {
-				$errMSG = "Incorrect Credentials, Try again...";
+				$errMSG = "Niepoprawne dane. Spróbuj ponownie.";
 			}
 				
 		}
@@ -60,7 +56,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coding Cage - Login & Registration System</title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
