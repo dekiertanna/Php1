@@ -1,11 +1,14 @@
-<div id="login-parent">
-	<div id = "login"> Nazwa użytkownika: <input type="text" name="loginbar">
-		</div>
-		<div id="password">Hasło: <input type="password" name="passbar">
-			</div>
-			<div id="rememberme">
-				<input type="checkbox" name="remembercheck">Zapamiętaj mnie</div>
-				<div id="registerlink">
-					<a href="form.php">Zarejestruj się</a>
-				</div>
-			</div>
+
+<?php
+if(!isset($_SESSION['loggedIn'])): ?>
+			<div class = "signup">
+			<div class ="block"><a href="form.php">Zarejestruj się</a></div>
+		 	<div class="block"><a href="login.php">Zaloguj się</a></div>
+		    </div>
+<?php endif;?>
+<?php
+if(isset($_SESSION['loggedIn'])) :?>
+<div class = "signup">
+			<div class ="block"><a href="logout.php">Wyloguj się</a></div>
+		    </div>
+<?php endif;?>

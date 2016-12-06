@@ -397,22 +397,24 @@ text-align: justify;
 margin-left: 10%;
 margin-right: 10%}
 
-#login-parent{
-	display: flex;
+.signup{
+	
 	background: #4d4d4d;
 	color:white;
+    
 }
 
 
-#password{
-	vertical-align: top;
+
+.row{
+    width:100%;
+    height: 100%;
+    text-align:left;
+    margin-left: 10%;
 }
 
-#rememberme{
-	vertical-align:top;
-}
-
-#registerlink{
-	vertical-align:top;
-	flex: 1;
+.block{
+    width:100px;
+    display: inline-block;
+    zoom:1;
 }

@@ -196,6 +196,7 @@
 								<div id="baner" class="bordered"/>
 								<div id="tlo">
 									<div id="container" class="bordered">
+									<?php include("loginbar.php");?>
 										<div id = "top">
 											<div id="pasekgorny">toppasek</div>
 
@@ -329,7 +330,7 @@
 																				</div>
 
 																				<div class="form-group">
-																					<a href="index.php">Zaloguj się</a>
+																					<a href="login.php">Zaloguj się</a>
 																				</div>
 
 																			</div>
