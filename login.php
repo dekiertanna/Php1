@@ -66,7 +66,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
+	
 		<title>Formularz osobowy</title>
 		<meta charset="UTF-8">
 			<meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
@@ -127,7 +127,7 @@
     	<div class="col-md-12">
         
         	<div class="form-group">
-            	<h2 class="">Sign In.</h2>
+            	<h2 class="">Zaloguj się.</h2>
             </div>
         
         	<div class="form-group">

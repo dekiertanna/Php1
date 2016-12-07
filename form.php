@@ -148,7 +148,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
+	
 		<title>Formularz osobowy</title>
 		<meta charset="UTF-8">
 			<meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
