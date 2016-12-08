@@ -1,8 +1,16 @@
 <?php
 	
 	session_start();
-	if(!isset($_SESSION['userId'])){
+	if(!isset($_SESSION['userId']))
    header("Location:login.php");
+   
+   if ( isset($_POST['submit']) && isset($_POST['skin'])  ) {
+   $cookie_name='skin';
+   
+   $cookie_value=$_POST['skin'];
+   setcookie($cookie_name, $cookie_value, time() + 3600, "/");
+   header("Refresh:0");
+   
 }
 	
 	
@@ -18,7 +26,7 @@
 				<meta name="Keywords" content="labolatorium,webowe,lista3,formularz">
 					<meta name="Author" content="Przemysław Pyzałka">
 						<meta name="Generator" content="JTHTML 7.6.2">
-							<link rel="Stylesheet" href="style.css" type="text/css">
+							 <?php include ("skinchooser.php"); ?>
 								<script>
        var scripts=["date.js"];
 
@@ -56,14 +64,12 @@
 
 								}
 								</script>
-								<div id="baner" class="bordered"/>
+								<div id="baner" class="bordered"/></div>
 								<div id="tlo">
 									<div id="container" class="bordered">
 									<?php include("loginbar.php");?>
-										<div id = "top">
 											<div id="pasekgorny">toppasek</div>
 
-										</div>
 										<?php include("menu.php"); ?>
 										<div id="tresc">
 												<h2> Dane użytkownika:</h2>
@@ -93,8 +99,19 @@
 											<div class ="block">Data urodzenia:</div>
 											<div class="block"><input type="text" name="name" value="<?php echo htmlspecialchars($_SESSION['dob']); ?>" readonly></div>
 											</div>
-																						
-
+												<div class = "row">										
+                      	<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+                        <div class ="block">Schemat kolorów</div>
+                        <select name='skin' >
+                        <option value='\defaultskin.css' >Default</option>
+                        <option value='\wiosna.css'>Wiosna</option>
+                        <option value='\lato.css'>Lato</option>
+                        <option value='\jesien.css'>Jesień</option>
+                        <option value='\zima.css'>Zima</option>
+                        </select>
+                        <input type="submit" name="submit" value="OK">
+                        </form>
+                       </div>
 
 																</div>
 

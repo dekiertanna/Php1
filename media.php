@@ -8,7 +8,7 @@
     <meta name="Keywords" content="labolatorium,webowe,lista3,template">
     <meta name="Author" content="Przemysław Pyzałka">
     <meta name="Generator" content="JTHTML 7.6.2">
-    <link rel="Stylesheet" href="style.css" type="text/css">
+    <?php include ("skinchooser.php"); ?>
       <script>
           var scripts=["date.js"];
 
@@ -28,6 +28,7 @@
     <div id="baner" class="bordered"></div>
          <div id="tlo">
                <div id="container" class="bordered">
+                    	<?php include("loginbar.php");?>
                     <div id="pasekgorny">toppasek</div>
                     <?php include("menu.php"); ?>
                     <div id="tresc">

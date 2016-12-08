@@ -1,0 +1,95 @@
+
+
+@charset "UTF-8";
+
+body
+{
+color: #6c3600;
+font-size: medium;
+}
+
+a:visited
+{
+color:brown;
+}
+
+ul{
+
+background: -moz-linear-gradient(top,orange 15%, yellow 45%, red 90%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,orange 15%, yellow 45%, red 90%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,orange 15%, yellow 45%, red 90%);
+filter: progid:DXImageTransform.Micro
+}
+ul li{
+
+
+background: -moz-linear-gradient(top,orange 15%, yellow 45%, red 90%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,orange 15%, yellow 45%, red 90%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,orange 15%, yellow 45%, red 90%);
+filter: progid:DXImageTransform.Micro
+
+}
+
+
+ul li a{
+
+background: -moz-linear-gradient(top,orange 15%, yellow 45%, red 90%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,orange 15%, yellow 45%, red 90%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,orange 15%, yellow 45%, red 90%);
+filter: progid:DXImageTransform.Micro
+
+
+}
+
+
+#baner
+{
+background-image: url("baner.jpg");
+}
+
+
+#tlo
+{
+ background-image: url("backgrounds/bg4.png");
+ background-attachment: fixed;
+ background-repeat:repeat;
+ background-position:top;
+ background-origin: content-box;
+
+}
+
+
+#pasekgorny
+{
+font-size:1.2em;
+border-bottom:2px solid black;
+}
+
+#tresc
+{
+ border: 3px dashed;
+ border-radius: 35px;
+}
+
+#placeholder
+{
+ border: 3px dashed;
+ border-radius: 35px;
+}
+
+#stopka
+{
+ border: 3px dashed;
+ border-radius: 35px;
+}
+
+.signup
+{
+background: inherit;
+  
+}
+
+.signup a
+{
+ color:brown;
+}

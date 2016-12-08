@@ -7,7 +7,7 @@
     <meta name="Keywords" content="sprzedaż,rejestracje,2015r,">
     <meta name="Author" content="Przemysław Pyzałka">
     <meta name="Generator" content="JTHTML 7.6.2">
-    <link rel="Stylesheet" href="style.css" type="text/css">
+     <?php include ("skinchooser.php"); ?>
       <script>
           var scripts=["date.js"];
 

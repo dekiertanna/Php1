@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+body
+{
+color: #0c5801;
+font-size: large;
+}
+
+ul{
+background: -moz-linear-gradient(top,lime 15%, teal 45%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,lime 15%, teal 45%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,lime 15%, teal 45%);
+filter: progid:DXImageTransform.Micro
+}
+
+ul li{
+
+color:white;
+background: -moz-linear-gradient(top,lime 15%, teal 45%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,lime 15%, teal 45%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,lime 15%, teal 45%);
+filter: progid:DXImageTransform.Micro
+
+}
+
+
+ul li a{
+background: -moz-linear-gradient(top,lime 15%, teal 45%);/* FF3.6-15 */
+background: -webkit-linear-gradient(top,lime 15%, teal 45%); /* Chrome10-25,Safari5.1-6 */
+background:linear-gradient(top,lime 15%, teal 45%);
+filter: progid:DXImageTransform.Micro
+
+}
+
+
+#baner
+{
+background-image: url("baner.jpg");
+}
+
+
+#tlo
+{
+ background-image: url("backgrounds/bg2.png");
+ background-attachment: fixed;
+ background-repeat:repeat;
+ background-position:top;
+ background-origin: content-box;
+
+}
+
+
+#pasekgorny
+{
+font-size:1.4em;
+border-bottom:2px solid black;
+}
+
+#tresc
+{
+
+ border: 10px dotted;
+
+}
+
+#placeholder
+{
+ border: 10px dotted;
+
+}
+
+#stopka
+{
+ border: 10px dotted;
+ 
+}
+
+.signup
+{
+	 background-color: #79ff9b;
+  
+  
+}
+
+.signup a
+{
+ color:green;
+}
+

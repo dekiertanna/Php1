@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -7,7 +10,7 @@
      <meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
     <meta name="Keywords" content="labolatorium,webowe,lista3,strona główna">
     <meta name="Author" content="Przemysław Pyzałka">
-    <link rel="Stylesheet" href="style.css" type="text/css">
+    <?php include ("skinchooser.php"); ?>
       <script>
           var scripts=["date.js"];
 

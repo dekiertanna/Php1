@@ -3,7 +3,18 @@
 	session_start();
 	require_once 'connect.php';
 	
-	
+	function logAsAdmin($email,$pass)
+  {
+  
+  if ($email=='admin@page.pl')
+     if($pass=='pass')
+     {
+        setcookie('session_id', session_id(), time() + 3600, "/");
+       $_SESSION['admin_id']=$email;
+        header("Location: adminpanel.php");
+     }
+        
+  }
 	
 	$error = false;
 	$loggedIn = false;
@@ -33,6 +44,10 @@
 			$passError = "Wprowadź hasło";
 		}
 		
+    if(isset($_POST['admin']))
+      logAsAdmin($email,$pass);
+    else
+    {
 		// if there's no error, continue to login
 		if (!$error) {
 			
@@ -61,19 +76,20 @@
 		}
 		
 	}
+  }
 ?>
 
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-	
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 		<title>Formularz osobowy</title>
 		<meta charset="UTF-8">
 			<meta name="Description" content="Prezentacja rozwiazan listy trzeciej">
 				<meta name="Keywords" content="labolatorium,webowe,lista3,formularz">
 					<meta name="Author" content="Przemysław Pyzałka">
 						<meta name="Generator" content="JTHTML 7.6.2">
-							<link rel="Stylesheet" href="style.css" type="text/css">
+							 <?php include ("skinchooser.php"); ?>
 								<script>
        var scripts=["date.js"];
 
@@ -111,14 +127,12 @@
 
 								}
 								</script>
-								<div id="baner" class="bordered"/>
+								<div id="baner" class="bordered"/></div>
 								<div id="tlo">
 									<div id="container" class="bordered">
 									<?php include("loginbar.php");?>
-										<div id = "top">
 											<div id="pasekgorny">toppasek</div>
 
-										</div>
 										<?php include("menu.php"); ?>
 										<div id="tresc">
 										<div id="login-form">
@@ -127,7 +141,7 @@
     	<div class="col-md-12">
         
         	<div class="form-group">
-            	<h2 class="">Zaloguj się.</h2>
+            	<h2 class="">Sign In.</h2>
             </div>
         
         	<div class="form-group">
@@ -166,7 +180,12 @@
             <div class="form-group">
             	<hr />
             </div>
-            
+            <div >
+            <input name="admin" type="checkbox" value=""  /><label>Zaloguj jako admin</label>
+            </div>
+            <div class="form-group">
+            	<hr />
+            </div>
             <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Zaloguj się</button>
             </div>

@@ -3,7 +3,7 @@
 
                 <ul  id="menu">
                     <li><a href="x.php" title="Powrót do strony głównej">Main Page</a></li>
-                    <li><a href="adminpanel.php" title="AdminPanel">AdminPanel</a></li>
+                    
                     <li>Artykuły
                         <ul >
                             <li><a href="historiasamochodow.php" title="Kilka słów o historii motoryzacji">Historia motoryzacji</a></li>
